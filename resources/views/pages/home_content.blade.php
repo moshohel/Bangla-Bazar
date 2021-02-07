@@ -9,7 +9,7 @@
     	<div class="row">
         	<div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img1.jpg" alt="shop_banner_img1">
+                	<img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="shop_banner_img1">
                     <div class="single_banner_info">
                         <h5 class="single_bn_title1">Super Sale</h5>
                         <h3 class="single_bn_title">New Collection</h3>
@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img2.jpg" alt="shop_banner_img2">
+                	<img src="https://images.unsplash.com/photo-1496886757622-f486fd7607e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="shop_banner_img2">
                     <div class="single_banner_info">
                         <h3 class="single_bn_title">New Season</h3>
                         <h4 class="single_bn_title1">Sale 40% Off</h4>
@@ -68,7 +68,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                            <img src="https://images.unsplash.com/photo-1602424158419-868ea180a67f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="product_img1">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -111,7 +111,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                            <img src="https://images.unsplash.com/photo-1551803091-e20673f15770?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" alt="product_img2">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -155,7 +155,7 @@
                                     <span class="pr_flash">New</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                            <img src="https://images.unsplash.com/photo-1589677677517-5784e74efbaa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=343&q=80 alt="product_img3">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -196,7 +196,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                            <img src="assets/images/m1.jpg" alt="product_img4">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -239,7 +239,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                            <img src="assets/images/f3.jpg" alt="product_img5">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -283,7 +283,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="https://images.unsplash.com/photo-1605557407303-a108ba934a06?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -326,7 +326,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="https://images.unsplash.com/photo-1570768022870-2c92cc3cb73b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -369,7 +369,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                            <img src="https://images.unsplash.com/photo-1604467794349-0b74285de7e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="product_img8">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -416,7 +416,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                            <img src="https://images.unsplash.com/photo-1572212566236-757a334243ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="product_img9">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -460,7 +460,7 @@
                                     <span class="pr_flash bg-danger">Hot</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                            <img src="https://images.unsplash.com/photo-1589677677517-5784e74efbaa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=343&q=80" alt="product_img6">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -502,7 +502,7 @@
                                 <div class="product">
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                            <img src="https://images.unsplash.com/photo-1580522154071-c6ca47a859ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="product_img11">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -545,7 +545,7 @@
                                     <span class="pr_flash bg-success">Sale</span>
                                     <div class="product_img">
                                         <a href="shop-product-detail.html">
-                                            <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                            <img src="https://images.unsplash.com/photo-1542728929-19dcc468723f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" alt="product_img7">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
@@ -1481,7 +1481,7 @@
             </div>
             <div class="col-md-5">
                 <div class="text-center trading_img">
-                    <img src="assets//images/tranding_img.png" alt="tranding_img">
+                    <img src="assets/images/f9.jpg" alt="tranding_img">
                 </div>
             </div>
         </div>

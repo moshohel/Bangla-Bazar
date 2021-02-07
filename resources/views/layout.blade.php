@@ -39,6 +39,8 @@
 <!-- Style CSS -->
 <link rel="stylesheet" href={{asset("assets/css/style.css")}}>
 <link rel="stylesheet" href={{asset("assets/css/responsive.css")}}>
+<!-- Custome Style CSS -->
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 
