@@ -14,7 +14,11 @@ use App\Http\Controllers\HomeController;
 */
 
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('pages.index');
+Route::get('/pages', 'App\Http\Controllers\PagesController@index');
+Route::get('/contact', function () {
+        return view('pages.contact');
+      });
 // Route::get('/', 'App\Http\Controllers\HomeController@index');
 
 // Route::get('/', function () {
