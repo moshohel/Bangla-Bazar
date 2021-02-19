@@ -36,9 +36,9 @@
 @include('partials.header')
 <!-- END HEADER -->
 
-<!-- START Slider -->
+{{-- <!-- START Slider -->
 @include('partials.slider')
-<!-- END Slider -->
+<!-- END Slider --> --}}
 
 <!-- Main Content -->
 @yield('content')
