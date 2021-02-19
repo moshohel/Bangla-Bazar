@@ -59,10 +59,11 @@
                           </li>
                       </ul>
                   </div>
+
                   <div class="tab-content">
                       <div class="tab-pane fade show active" id="arrival" role="tabpanel" aria-labelledby="arrival-tab">
                           <div class="row shop_container">
-
+                            <img src="/images/f2.png" alt="pizza house logo">
                             @foreach ($products as $product)
                               <div class="col-lg-3 col-md-4 col-6">
                                   <div class="product">
@@ -70,7 +71,7 @@
                                     @foreach ($product->images as $image)
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="{{  asset('public/assets/images/'. $image->image)  }}" alt="product_img1">
+                                                <img src="{{  '/images/'. $image->image  }}" alt="product_img1">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">

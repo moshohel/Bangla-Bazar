@@ -70,7 +70,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="https://images.unsplash.com/photo-1602424158419-868ea180a67f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="product_img1">
+                                                <img src="/images/w1.jpg" alt="product_img1">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -198,7 +198,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/m1.jpg" alt="product_img4">
+                                                <img src="/images/m1.jpg" alt="product_img4">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -241,7 +241,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/f3.jpg" alt="product_img5">
+                                                <img src="/images/f3.jpg" alt="product_img5">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -590,7 +590,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                                <img src="/images/product_img8.jpg" alt="product_img8">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -633,7 +633,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                                <img src="/images/product_img5.jpg" alt="product_img5">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -676,7 +676,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                                <img src="/images/product_img12.jpg" alt="product_img12">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -720,7 +720,7 @@
                                         <span class="pr_flash bg-danger">Hot</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img10.jpg" alt="product_img10">
+                                                <img src="/images/product_img10.jpg" alt="product_img10">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -767,7 +767,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                                <img src="/images/product_img5.jpg" alt="product_img5">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -810,7 +810,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                                <img src="/images/product_img12.jpg" alt="product_img12">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -853,7 +853,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                                <img src="/images/product_img9.jpg" alt="product_img9">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -897,7 +897,7 @@
                                         <span class="pr_flash bg-success">Sale</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img10.jpg" alt="product_img10">
+                                                <img src="/images/product_img10.jpg" alt="product_img10">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -941,7 +941,7 @@
                                         <span class="pr_flash bg-danger">Hot</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                                <img src="/images/product_img7.jpg" alt="product_img7">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -984,7 +984,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                                <img src="/images/product_img11.jpg" alt="product_img11">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1026,7 +1026,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                                <img src="/images/product_img8.jpg" alt="product_img8">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1070,7 +1070,7 @@
                                         <span class="pr_flash">Sale</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                                <img src="/images/product_img6.jpg" alt="product_img6">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1116,7 +1116,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                                <img src="/images/product_img4.jpg" alt="product_img4">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1159,7 +1159,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img9.jpg" alt="product_img9">
+                                                <img src="/images/product_img9.jpg" alt="product_img9">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1202,7 +1202,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img8.jpg" alt="product_img8">
+                                                <img src="/images/product_img8.jpg" alt="product_img8">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1246,7 +1246,7 @@
                                         <span class="pr_flash">New</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                                <img src="/images/product_img1.jpg" alt="product_img1">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1289,7 +1289,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img12.jpg" alt="product_img12">
+                                                <img src="/images/product_img12.jpg" alt="product_img12">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1332,7 +1332,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img6.jpg" alt="product_img6">
+                                                <img src="/images/product_img6.jpg" alt="product_img6">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1375,7 +1375,7 @@
                                         <span class="pr_flash bg-success">Sale</span>
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img7.jpg" alt="product_img7">
+                                                <img src="/images/product_img7.jpg" alt="product_img7">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1418,7 +1418,7 @@
                                     <div class="product">
                                         <div class="product_img">
                                             <a href="shop-product-detail.html">
-                                                <img src="assets/images/product_img11.jpg" alt="product_img11">
+                                                <img src="/images/product_img11.jpg" alt="product_img11">
                                             </a>
                                             <div class="product_action_box">
                                                 <ul class="list_none pr_action_btn">
@@ -1483,7 +1483,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="text-center trading_img">
-                        <img src="assets/images/f9.jpg" alt="tranding_img">
+                        <img src="/images/f9.jpg" alt="tranding_img">
                     </div>
                 </div>
             </div>
@@ -1513,7 +1513,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                        <img src="/images/product_img2.jpg" alt="product_img2">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1556,7 +1556,7 @@
                                 <span class="pr_flash">New</span>
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                        <img src="/images/product_img3.jpg" alt="product_img3">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1596,7 +1596,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                        <img src="/images/product_img4.jpg" alt="product_img4">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1638,7 +1638,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                        <img src="/images/product_img5.jpg" alt="product_img5">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1680,7 +1680,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                        <img src="/images/product_img1.jpg" alt="product_img1">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1722,7 +1722,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                        <img src="/images/product_img2.jpg" alt="product_img2">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1765,7 +1765,7 @@
                                 <span class="pr_flash">New</span>
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                        <img src="/images/product_img3.jpg" alt="product_img3">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1805,7 +1805,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                        <img src="/images/product_img4.jpg" alt="product_img4">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1847,7 +1847,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img5.jpg" alt="product_img5">
+                                        <img src="/images/product_img5.jpg" alt="product_img5">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1889,7 +1889,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img1.jpg" alt="product_img1">
+                                        <img src="/images/product_img1.jpg" alt="product_img1">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1931,7 +1931,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img2.jpg" alt="product_img2">
+                                        <img src="/images/product_img2.jpg" alt="product_img2">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -1974,7 +1974,7 @@
                                 <span class="pr_flash">New</span>
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img3.jpg" alt="product_img3">
+                                        <img src="/images/product_img3.jpg" alt="product_img3">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -2014,7 +2014,7 @@
                             <div class="product">
                                 <div class="product_img">
                                     <a href="shop-product-detail.html">
-                                        <img src="assets/images/product_img4.jpg" alt="product_img4">
+                                        <img src="/images/product_img4.jpg" alt="product_img4">
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
@@ -2082,7 +2082,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img3.jpg" alt="user_img3">
+                                    <img src="/images/user_img3.jpg" alt="user_img3">
                                 </div>
                                 <div class="author_name">
                                     <h6>Daisy Lana</h6>
@@ -2095,7 +2095,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img4.jpg" alt="user_img4">
+                                    <img src="/images/user_img4.jpg" alt="user_img4">
                                 </div>
                                 <div class="author_name">
                                     <h6>John Becker</h6>
@@ -2108,7 +2108,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img1.jpg" alt="user_img1">
+                                    <img src="/images/user_img1.jpg" alt="user_img1">
                                 </div>
                                 <div class="author_name">
                                     <h6>Lissa Castro</h6>
@@ -2121,7 +2121,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img2.jpg" alt="user_img2">
+                                    <img src="/images/user_img2.jpg" alt="user_img2">
                                 </div>
                                 <div class="author_name">
                                     <h6>Alden Smith</h6>
@@ -2134,7 +2134,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img3.jpg" alt="user_img3">
+                                    <img src="/images/user_img3.jpg" alt="user_img3">
                                 </div>
                                 <div class="author_name">
                                     <h6>Daisy Lana</h6>
@@ -2147,7 +2147,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img4.jpg" alt="user_img4">
+                                    <img src="/images/user_img4.jpg" alt="user_img4">
                                 </div>
                                 <div class="author_name">
                                     <h6>John Becker</h6>
@@ -2160,7 +2160,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img1.jpg" alt="user_img1">
+                                    <img src="/images/user_img1.jpg" alt="user_img1">
                                 </div>
                                 <div class="author_name">
                                     <h6>Lissa Castro</h6>
@@ -2173,7 +2173,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="assets/images/user_img2.jpg" alt="user_img2">
+                                    <img src="/images/user_img2.jpg" alt="user_img2">
                                 </div>
                                 <div class="author_name">
                                     <h6>Alden Smith</h6>
