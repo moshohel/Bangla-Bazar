@@ -18,19 +18,13 @@
 
 <body>
 
-<!-- LOADER ANIMATION-->
-<div class="preloader">
-    <div class="lds-ellipsis">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
-<!-- END LOADER -->
+{{-- <!-- LOADER ANIMATION-->
+@include('partials.preloader')
+<!-- END LOADER --> --}}
 
-<!-- Home Popup Section -->
+{{-- <!-- Home Popup Section -->
 @include('partials.popup')
-<!-- End Screen Load Popup Section -->
+<!-- End Screen Load Popup Section --> --}}
 
 <!-- START HEADER -->
 @include('partials.header')

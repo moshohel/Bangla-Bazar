@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="{{ route('pages.index') }}">
+  <a class="navbar-brand" href="{{ route('index') }}">
       <img class="logo_light" src="/images/logo_light.png" alt="logo" />
       <img class="logo_dark" src="/images/logo_dark.png" alt="logo" />
   </a>
@@ -9,10 +9,10 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
           <li class="dropdown">
-              <a data-toggle="dropdown" class="nav-link active" href="{{ route('pages.index') }}">Home</a>
+              <a class="nav-link" href="{{ route('index') }}">Home</a>
           </li>
           <li class="dropdown dropdown-mega-menu">
-              <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Products</a>
+              <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Category</a>
               <div class="dropdown-menu">
                   <ul class="mega-menu d-lg-flex">
                       <li class="mega-menu-col col-lg-3">
@@ -91,10 +91,13 @@
               </div>
           </li>
           <li>
-              <a class=" nav-link" href="#" data-toggle="dropdown">About Us</a>
+              <a class=" nav-link nav_item" href="{{ route('products') }}">Products</a>
           </li>
           <li>
-              <a class="nav-link nav_item" href="#">Contact Us</a>
+            <a class=" nav-link" href="#">About Us</a>
+        </li>
+          <li>
+              <a class="nav-link nav_item" href="{{ route('contact') }}">Contact Us</a>
           </li>
       </ul>
   </div>

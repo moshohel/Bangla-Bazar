@@ -1,6 +1,14 @@
 @extends('layouts.layout')
 @section('content')
 
+<!-- START preloader Animation -->
+@include('partials.preloader')
+<!-- END  -->
+
+<!-- Home Popup Section -->
+@include('partials.popup')
+<!-- End Screen Load Popup Section -->
+
 <!-- START Slider -->
 @include('partials.slider')
 <!-- END Slider -->
@@ -2108,7 +2116,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="/images/user_img1.jpg" alt="user_img1">
+                                    <img src="/images/w3.jpg" alt="user_img1">
                                 </div>
                                 <div class="author_name">
                                     <h6>Lissa Castro</h6>
@@ -2121,7 +2129,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="/images/user_img2.jpg" alt="user_img2">
+                                    <img src="/images/w2.jpg" alt="user_img2">
                                 </div>
                                 <div class="author_name">
                                     <h6>Alden Smith</h6>
@@ -2134,7 +2142,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="/images/user_img3.jpg" alt="user_img3">
+                                    <img src="/images/w1.jpg" alt="user_img3">
                                 </div>
                                 <div class="author_name">
                                     <h6>Daisy Lana</h6>
@@ -2147,7 +2155,7 @@
                             </div>
                             <div class="author_wrap">
                                 <div class="author_img">
-                                    <img src="/images/user_img4.jpg" alt="user_img4">
+                                    <img src="/images/w4.jpg" alt="user_img4">
                                 </div>
                                 <div class="author_name">
                                     <h6>John Becker</h6>

@@ -64,52 +64,57 @@
                       <div class="tab-pane fade show active" id="arrival" role="tabpanel" aria-labelledby="arrival-tab">
                           <div class="row shop_container">
                             <img src="/images/f2.png" alt="pizza house logo">
-                            @foreach ($products as $product)
-                              <div class="col-lg-3 col-md-4 col-6">
-                                  <div class="product">
+                                @foreach ($products as $product)
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <div class="product">
 
-                                    @foreach ($product->images as $image)
-                                        <div class="product_img">
-                                            <a href="shop-product-detail.html">
-                                                <img src="{{  '/images/'. $image->image  }}" alt="product_img1">
-                                            </a>
-                                            <div class="product_action_box">
-                                                <ul class="list_none pr_action_btn">
-                                                    <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                                    <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                                    <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                                                    <li><a href="#"><i class="icon-heart"></i></a></li>
-                                                </ul>
+                                            {{-- showing one from productImage table --}}
+                                            @php $i = 1; @endphp
+                                            @foreach ($product->images as $image)
+                                                @if ($i > 0)
+                                                    <div class="product_img">
+                                                        <a href="shop-product-detail.html">
+                                                            <img src="{{  '/images/'. $image->image  }}" alt="product_img1">
+                                                        </a>
+                                                        <div class="product_action_box">
+                                                            <ul class="list_none pr_action_btn">
+                                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @php $i--; @endphp
+                                            @endforeach
+
+                                            <script>
+                                                console.log(<?= json_encode($product); ?>);
+                                            </script>
+
+                                            <div class="product_info">
+                                                <h6 class="product_title"><a href="shop-product-detail.html">{{ $product->title }}</a></h6>
+                                                <div class="product_price">
+                                                    <span class="price">${{ $product->price }}</span>
+                                                    <del>$55.25</del>
+                                                    <div class="on_sale">
+                                                        <span>35% Off</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rating_wrap">
+                                                    <div class="rating">
+                                                        <div class="product_rate" style="width:80%"></div>
+                                                    </div>
+                                                    <span class="rating_num">(21)</span>
+                                                </div>
+                                                <div class="pr_desc">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    @endforeach
-
-                                    <script>
-                                        console.log(<?= json_encode($product); ?>);
-                                    </script>
-
-                                      <div class="product_info">
-                                          <h6 class="product_title"><a href="shop-product-detail.html">{{ $product->title }}</a></h6>
-                                          <div class="product_price">
-                                              <span class="price">${{ $product->price }}</span>
-                                              <del>$55.25</del>
-                                              <div class="on_sale">
-                                                  <span>35% Off</span>
-                                              </div>
-                                          </div>
-                                          <div class="rating_wrap">
-                                              <div class="rating">
-                                                  <div class="product_rate" style="width:80%"></div>
-                                              </div>
-                                              <span class="rating_num">(21)</span>
-                                          </div>
-                                          <div class="pr_desc">
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              @endforeach
+                                    </div>
+                                @endforeach
 
                           </div>
                       </div>
