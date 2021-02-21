@@ -1,1 +1,2 @@
-<h1><p>create</p></h1>
+@extends('admin.layouts.layout')
+

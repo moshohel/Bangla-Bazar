@@ -12,6 +12,6 @@ public function index()
   }
   public function product_create()
   {
-    return view('admin.pages.product.create');
+    return view('admin.pages.create');
   }
 }

@@ -20,8 +20,6 @@ Route::get('/', 'App\Http\Controllers\PagesController@index')->name('index');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
 Route::get('/products', 'App\Http\Controllers\PagesController@products')->name('products');
 
-// Route::get('/', 'App\Http\Controllers\HomeController@index');
-
 // Route::get('/', function () {
 //     return view('pages.home_content');
 //   });
