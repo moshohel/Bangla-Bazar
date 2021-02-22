@@ -8,6 +8,8 @@
     <div class="card-body">
         <form action="{{ route("admin.product.store") }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
+            {{-- INCULDE Messages Partial --}}
+            @include('admin.partials.messages')
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
                 <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Product Title">
@@ -18,9 +20,13 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlPassword">Price</label>
-                <input type="text" class="form-control" name="price" id="exampleFormControlPassword" placeholder="Product price">
+                <input type="number" class="form-control" name="price" id="exampleFormControlPassword" placeholder="Product price">
             </div>
             <div class="form-group">
+                <label for="exampleFormControlPassword">Quantity</label>
+                <input type="number" class="form-control"  name="quantity" id="exampleFormControlPassword" placeholder="Product price">
+            </div>
+            {{-- <div class="form-group">
                 <label for="exampleFormControlSelect12">Quantity</label>
                 <select class="form-control" name="quantity" id="exampleFormControlSelect12">
                     <option>10</option>
@@ -34,7 +40,7 @@
                     <option>90</option>
                     <option>100</option>
                 </select>
-            </div>
+            </div> --}}
             <div class="form-group">
                 <label for="exampleFormControlFile1">Product Image</label>
                 <div class="row">

@@ -24,6 +24,17 @@ public function index()
   }
   public function product_store(Request $request)
   {
+    // Validation
+    $request->validate([
+      'title'         => 'required|max:150',
+      'description'   => 'required',
+      'price'         => 'required|numeric',
+      'quantity'      => 'required|numeric',
+      // 'category_id'   => 'required|numeric',
+      // 'brand_id'      => 'required|numeric',
+    ]);
+
+    // Using Product Modle
     $product = new Product;
     $product->title = $request->title;
     $product->description = $request->description;
@@ -36,21 +47,8 @@ public function index()
     $product->admin_id = 1;
     $product->save();
 
-    // Insert image to ProductImage Model
 
-    //   if ($request->hasFile('product_image')) {
-    //   // insert that image
-    //   $image = $request->file('product_image');
-    //   $img = time() . '.'. $image->getClientOriginalExtension();
-    //   $location = public_path('images/' .$img);
-    //   Image::make($image)->save($location);
-
-    //   $product_image = new ProductImage;
-    //   $product_image->product_id = $product->id;
-    //   $product_image->image = $img;
-    //   $product_image->save();
-    // }
-
+    // Inserting multiple Images
     if (count($request->product_image) > 0) {
       $i = 0;
       foreach ($request->product_image as $image) {
@@ -61,6 +59,7 @@ public function index()
         $location = 'images/' .$img;
         Image::make($image)->save($location);
 
+        // Using PorductImage
         $product_image = new ProductImage;
         $product_image->product_id = $product->id;
         $product_image->image = $img;
