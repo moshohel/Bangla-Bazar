@@ -38,17 +38,35 @@ public function index()
 
     // Insert image to ProductImage Model
 
-      if ($request->hasFile('product_image')) {
-      // insert that image
-      $image = $request->file('product_image');
-      $img = time() . '.'. $image->getClientOriginalExtension();
-      $location = public_path('images/' .$img);
-      Image::make($image)->save($location);
+    //   if ($request->hasFile('product_image')) {
+    //   // insert that image
+    //   $image = $request->file('product_image');
+    //   $img = time() . '.'. $image->getClientOriginalExtension();
+    //   $location = public_path('images/' .$img);
+    //   Image::make($image)->save($location);
 
-      $product_image = new ProductImage;
-      $product_image->product_id = $product->id;
-      $product_image->image = $img;
-      $product_image->save();
+    //   $product_image = new ProductImage;
+    //   $product_image->product_id = $product->id;
+    //   $product_image->image = $img;
+    //   $product_image->save();
+    // }
+
+    if (count($request->product_image) > 0) {
+      $i = 0;
+      foreach ($request->product_image as $image) {
+
+        //insert that image
+        //$image = $request->file('product_image');
+        $img = time() . $i .'.'. $image->getClientOriginalExtension();
+        $location = 'images/' .$img;
+        Image::make($image)->save($location);
+
+        $product_image = new ProductImage;
+        $product_image->product_id = $product->id;
+        $product_image->image = $img;
+        $product_image->save();
+        $i++;
+      }
     }
 
     return redirect()->route('admin.product.create');
