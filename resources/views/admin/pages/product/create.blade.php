@@ -6,7 +6,7 @@
         <h2>Product Add</h2>
     </div>
     <div class="card-body">
-        <form action="{{ route("admin.product.store") }}" method="post">
+        <form action="{{ route("admin.product.store") }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
@@ -35,12 +35,12 @@
                     <option>100</option>
                 </select>
             </div>
-            {{-- <div class="form-group">
-                <label for="exampleFormControlFile1">Example file input</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div> --}}
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Product Image</label>
+                <input type="file" class="form-control-file" name="product_image" id="exampleFormControlFile1">
+            </div>
             <div class="form-footer pt-4 pt-5 mt-4 border-top">
-                <button type="submit" class="btn btn-primary btn-default">Submit</button>
+                <button type="submit" class="btn btn-primary btn-default">Add Product</button>
                 <button type="submit" class="btn btn-secondary btn-default">Cancel</button>
             </div>
         </form>
