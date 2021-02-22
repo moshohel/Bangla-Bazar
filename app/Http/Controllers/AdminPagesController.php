@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\ProductImage;
+
 use Illuminate\Http\Request;
+use Image;
 
 use Illuminate\Support\Str;
 $slug = Str::slug('Laravel 5 Framework', '-');
@@ -31,8 +34,22 @@ public function index()
     $product->category_id = 1;
     $product->brand_id = 1;
     $product->admin_id = 1;
-
     $product->save();
+
+    // Insert image to ProductImage Model
+
+      if ($request->hasFile('product_image')) {
+      // insert that image
+      $image = $request->file('product_image');
+      $img = time() . '.'. $image->getClientOriginalExtension();
+      $location = public_path('images/' .$img);
+      Image::make($image)->save($location);
+
+      $product_image = new ProductImage;
+      $product_image->product_id = $product->id;
+      $product_image->image = $img;
+      $product_image->save();
+    }
 
     return redirect()->route('admin.product.create');
   }

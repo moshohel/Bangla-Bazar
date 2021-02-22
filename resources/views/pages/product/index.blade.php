@@ -63,7 +63,7 @@
                   <div class="tab-content">
                       <div class="tab-pane fade show active" id="arrival" role="tabpanel" aria-labelledby="arrival-tab">
                           <div class="row shop_container">
-                            <img src="/images/f2.png" alt="pizza house logo">
+
                                 @foreach ($products as $product)
                                     <div class="col-lg-3 col-md-4 col-6">
                                         <div class="product">
