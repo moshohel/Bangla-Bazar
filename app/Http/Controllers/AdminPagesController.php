@@ -14,7 +14,7 @@ $slug = Str::slug('Laravel 5 Framework', '-');
 
 class AdminPagesController extends Controller
 {
-public function index()
+  public function index()
   {
     return view('admin.pages.index');
   }
@@ -69,5 +69,10 @@ public function index()
     }
 
     return redirect()->route('admin.product.create');
+  }
+  public function manage_products()
+  {
+    $products = Product::orderBy('id', 'desc')->get();
+    return view('admin.pages.product.index')->with('products', $products);
   }
 }
