@@ -88,13 +88,18 @@
 
                   <li>
                     <a class="sidenav-item-link" href="{{ url('/admin/products') }}">
-                      <span class="nav-text">Products</span>
+                      <span class="nav-text">All Products</span>
 
                     </a>
                   </li>
 
 
+                  <li>
+                    <a class="sidenav-item-link" href="{{ route('admin.product.create') }}">
+                      <span class="nav-text">Create Product</span>
 
+                    </a>
+                  </li>
 
 
                   <li class="has-sub">

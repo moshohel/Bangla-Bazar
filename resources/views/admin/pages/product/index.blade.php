@@ -20,6 +20,7 @@
                   <th class="d-none d-md-table-cell">Price</th>
                   <th class="d-none d-md-table-cell">Quantity</th>
                   <th class="d-none d-md-table-cell">Date</th>
+                  <th>Status</th>
                   <th>Action</th>
                   <th></th>
                 </tr>
@@ -34,19 +35,17 @@
                         <td class="d-none d-md-table-cell">{{ $product->price }}</td>
                         <td class="d-none d-md-table-cell">{{ $product->quantity }}</td>
                         <td class="d-none d-md-table-cell">$150</td>
-                        @if ( $product->quantity <= 50 )
-                            <td>
+                        <td>
+                            @if ( $product->quantity <= 50 )
                                 <span class="badge badge-danger">Old Pro</span>
-                            </td>
-                        @elseif ( $product->quantity > 50 && $product->quantity < 100 )
-                            <td>
+                            @elseif ( $product->quantity > 50 && $product->quantity < 100 )
                                 <span class="badge badge-warning">Present Pro</span>
-                            </td>
-                        @else
-                            <td>
+                            @else
                                 <span class="badge badge-success">New Pro</span>
-                            </td>
-                        @endif
+                            @endif
+                        </td>
+
+                        <td><a href="{{ route('admin.product.edit', $product->id) }}" class="badge badge-success">Edit</a></td>
 
                         <td class="text-right">
                         <div class="dropdown show d-inline-block widget-dropdown">

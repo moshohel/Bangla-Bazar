@@ -29,5 +29,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\AdminPagesController@index')->name('admin.index');
     Route::get('/products', 'App\Http\Controllers\AdminPagesController@manage_products')->name('admin.products');
     Route::get('/product/create', 'App\Http\Controllers\AdminPagesController@product_create')->name('admin.product.create');
+    Route::get('/product/edit/{id}', 'App\Http\Controllers\AdminPagesController@product_edit')->name('admin.product.edit');
     Route::post('/product/create', 'App\Http\Controllers\AdminPagesController@product_store')->name('admin.product.store');
+    Route::post('/product/edit/{id}', 'App\Http\Controllers\AdminPagesController@product_update')->name('admin.product.update');
 });
