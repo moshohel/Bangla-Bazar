@@ -9,13 +9,15 @@
     </div>
 @endif
 
-{{-- @if (Session::has('success'))
+{{-- Session Message for Successful Delete --}}
+@if (Session::has('success'))
   <div class="alert alert-success">
+    {{-- showing Session data --}}
     <p>{{ Session::get('success') }}</p>
   </div>
 @endif
 
-@if (Session::has('error'))
+{{-- @if (Session::has('error'))
   <div class="alert alert-danger">
     <p>{{ Session::get('error') }}</p>
   </div>

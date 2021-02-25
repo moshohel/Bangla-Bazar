@@ -8,7 +8,7 @@
 
   <title> Admin Dashboard </title>
 
-  @include('admin.partials.styles')
+  @include('backend.partials.styles')
 
 </head>
 
@@ -303,7 +303,7 @@
     </div>
   </div>
 
-@include('admin.partials.scripts')
+@include('backend.partials.scripts')
 
 </body>
 </html>

@@ -12,26 +12,26 @@
 <!-- SITE TITLE -->
 <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
 <!-- CSS -->
-@include('partials.styles')
+@include('frontend.partials.styles')
 
 </head>
 
 <body>
 
 {{-- <!-- LOADER ANIMATION-->
-@include('partials.preloader')
+@include('frontend.partials.preloader')
 <!-- END LOADER --> --}}
 
 {{-- <!-- Home Popup Section -->
-@include('partials.popup')
+@include('frontend.partials.popup')
 <!-- End Screen Load Popup Section --> --}}
 
 <!-- START HEADER -->
-@include('partials.header')
+@include('frontend.partials.header')
 <!-- END HEADER -->
 
 {{-- <!-- START Slider -->
-@include('partials.slider')
+@include('frontend.partials.slider')
 <!-- END Slider --> --}}
 
 <!-- Main Content -->
@@ -39,13 +39,13 @@
 <!-- End Main Content -->
 
 <!-- START FOOTER -->
-@include('partials.footer')
+@include('frontend.partials.footer')
 <!-- END FOOTER -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
 
 {{-- Scripts --}}
-@include('partials.scripts')
+@include('frontend.partials.scripts')
 
 </body>
 </html>

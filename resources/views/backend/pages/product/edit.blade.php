@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout')
+@extends('backend.layouts.layout')
 
 @section('content')
 <div class="card card-default">
@@ -9,7 +9,7 @@
         <form action="{{ route("admin.product.update", $product->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             {{-- INCULDE Messages Partial --}}
-            @include('admin.partials.messages')
+            @include('backend.partials.messages')
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
                 <input type="text" name="title" class="form-control"  value="{{ $product->title }}">

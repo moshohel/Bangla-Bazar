@@ -1,16 +1,16 @@
-@extends('layouts.layout')
+@extends('frontend.layouts.layout')
 @section('content')
 
 <!-- START preloader Animation -->
-@include('partials.preloader')
+@include('frontend.partials.preloader')
 <!-- END  -->
 
 <!-- Home Popup Section -->
-@include('partials.popup')
+@include('frontend.partials.popup')
 <!-- End Screen Load Popup Section -->
 
 <!-- START Slider -->
-@include('partials.slider')
+@include('frontend.partials.slider')
 <!-- END Slider -->
 
 <div class="main_content">

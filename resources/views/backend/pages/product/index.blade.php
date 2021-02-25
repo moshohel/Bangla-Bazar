@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout')
+@extends('backend.layouts.layout')
 
 @section('content')
 <div class="row">
@@ -12,6 +12,7 @@
             </div>
           </div>
           <div class="card-body pt-0 pb-5">
+            @include('backend.partials.messages')
             <table class="table card-table table-responsive table-responsive-large" style="width:100%">
               <thead>
                 <tr>

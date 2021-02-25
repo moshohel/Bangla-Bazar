@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminPagesController;
+use App\Http\Controllers\Frontend\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,28 +14,44 @@ use App\Http\Controllers\AdminPagesController;
 |
 */
 
-
-// Route::get('/', [HomeController::class, 'index'])->name('pages.index');
-Route::get('/', 'App\Http\Controllers\PagesController@index')->name('index');
-Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
-Route::get('/products', 'App\Http\Controllers\PagesController@products')->name('products');
-
 // Route::get('/', function () {
 //     return view('pages.home_content');
 //   });
 
+
+// 2 ways to link with a Controller
+// 1st way -
+
+// Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+
+// 2nd way -
+// Frontend Routes
+Route::get('/', 'App\Http\Controllers\Frontend\PagesController@index')->name('index');
+Route::get('/contact', 'App\Http\Controllers\Frontend\PagesController@contact')->name('contact');
+/*
+|--------------------------------------------------------------------------
+| Frontend Routes
+|--------------------------------------------------------------------------
+  All Products routes for frontend
+|
+*/
+Route::get('/products', 'App\Http\Controllers\Frontend\ProductsController@index')->name('products');
+Route::get('/products/{slug}', 'App\Http\Controllers\Frontend\ProductsController@show')->name('products.show');
+
+
+
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
-    Route::get('/', 'App\Http\Controllers\AdminPagesController@index')->name('admin.index');
+    Route::get('/', 'App\Http\Controllers\Backend\PagesController@index')->name('admin.index');
 
     // Product Routes
     Route::prefix('/products')->group(function () {
-        Route::get('/', 'App\Http\Controllers\AdminProductController@index')->name('admin.products');
-        Route::get('/create', 'App\Http\Controllers\AdminProductController@create')->name('admin.product.create');
-        Route::get('/edit/{id}', 'App\Http\Controllers\AdminProductController@edit')->name('admin.product.edit');
-        Route::post('/create', 'App\Http\Controllers\AdminProductController@store')->name('admin.product.store');
-        Route::post('/edit/{id}', 'App\Http\Controllers\AdminProductController@update')->name('admin.product.update');
-        Route::post('/delete/{id}', 'App\Http\Controllers\AdminProductController@delete')->name('admin.product.delete');
+        Route::get('/', 'App\Http\Controllers\Backend\ProductsController@index')->name('admin.products');
+        Route::get('/create', 'App\Http\Controllers\Backend\ProductsController@create')->name('admin.product.create');
+        Route::get('/edit/{id}', 'App\Http\Controllers\Backend\ProductsController@edit')->name('admin.product.edit');
+        Route::post('/create', 'App\Http\Controllers\Backend\ProductsController@store')->name('admin.product.store');
+        Route::post('/edit/{id}', 'App\Http\Controllers\Backend\ProductsController@update')->name('admin.product.update');
+        Route::post('/delete/{id}', 'App\Http\Controllers\Backend\ProductsController@delete')->name('admin.product.delete');
     });
 
 });

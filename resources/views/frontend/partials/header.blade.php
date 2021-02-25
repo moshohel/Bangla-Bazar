@@ -25,7 +25,7 @@
     	<div class="container">
             {{-- START NAV --}}
 
-            @include('partials.nav')
+            @include('frontend.partials.nav')
 
             {{-- END NAV --}}
         </div>

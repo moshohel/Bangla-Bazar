@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
+
+use App\Http\Controllers\Controller;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -9,15 +11,15 @@ class PagesController extends Controller
 {
   public function index()
   {
-    return view('pages.home_content');
+    return view('frontend.pages.home_content');
   }
   public function contact()
   {
-    return view('pages.contact');
+    return view('frontend.pages.contact');
   }
   public function products()
   {
     $products = Product::orderBy('id', 'desc')->get();
-    return view('pages.product.index')->with('products', $products);
+    return view('frontend.pages.product.index')->with('products', $products);
   }
 }

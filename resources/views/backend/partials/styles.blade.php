@@ -29,3 +29,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <script src={{asset("assets/admin/plugins/nprogress/nprogress.js")}}></script>
+
+
+  <!-- Custome Style CSS -->
+{{-- <link rel="stylesheet" href="css/app.css"> --}}
