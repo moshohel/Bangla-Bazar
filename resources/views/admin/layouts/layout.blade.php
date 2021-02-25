@@ -45,13 +45,18 @@
           <!-- sidebar menu -->
           <ul class="nav sidebar-inner" id="sidebar-menu">
 
-            <li class="has-sub">
-              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+            <li class="has-sub active expand">
+              {{-- <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
                 aria-expanded="false" aria-controls="dashboard">
                 <i class="mdi mdi-view-dashboard-outline"></i>
                 <span class="nav-text">Dashboard</span> <b class="caret"></b>
+              </a> --}}
+              <a class="active" href="{{ route('admin.index') }}">
+                <i class="mdi mdi-view-dashboard-outline"></i>
+                <span class="nav-text">Dashboard</span> <b></b>
+
               </a>
-              <ul class="collapse" id="dashboard" data-parent="#sidebar-menu">
+              {{-- <ul class="collapse" id="dashboard" data-parent="#sidebar-menu">
                 <div class="sub-menu">
                   <li>
                     <a class="sidenav-item-link" href="index.html">
@@ -67,7 +72,7 @@
                     </a>
                   </li>
                 </div>
-              </ul>
+              </ul> --}}
             </li>
 
 
@@ -79,7 +84,7 @@
               <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#manageProducts"
                 aria-expanded="false" aria-controls="manageProducts">
                 <i class="mdi mdi-image-filter-none"></i>
-                <span class="nav-text">Manage Products</span> <b class="caret"></b>
+                <span class="nav-text">Products</span> <b class="caret"></b>
               </a>
               <ul class="collapse" id="manageProducts" data-parent="#sidebar-menu">
                 <div class="sub-menu">
@@ -87,15 +92,15 @@
 
 
                   <li>
-                    <a class="sidenav-item-link" href="{{ url('/admin/products') }}">
-                      <span class="nav-text">All Products</span>
+                    <a class="active" href="{{ url('/admin/products') }}">
+                      <span class="nav-text">Manage Products</span>
 
                     </a>
                   </li>
 
 
                   <li>
-                    <a class="sidenav-item-link" href="{{ route('admin.product.create') }}">
+                    <a class="active" href="{{ route('admin.product.create') }}">
                       <span class="nav-text">Create Product</span>
 
                     </a>

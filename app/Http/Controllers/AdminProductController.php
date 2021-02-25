@@ -12,37 +12,37 @@ use Illuminate\Support\Str;
 $slug = Str::slug('Laravel 5 Framework', '-');
 
 
-class AdminPagesController extends Controller
+class AdminProductController extends Controller
 {
-  public function index()
-  {
-    return view('admin.pages.index');
-  }
 
-  public function product_create()
+    public function index()
+    {
+        $products = Product::orderBy('id', 'desc')->get();
+        return view('admin.pages.product.index')->with('products', $products);
+    }
+
+  public function create()
   {
     return view('admin.pages.product.create');
   }
 
-  public function manage_products()
-  {
-    $products = Product::orderBy('id', 'desc')->get();
-    return view('admin.pages.product.index')->with('products', $products);
-  }
 
-  public function product_edit($id)
+  public function edit($id)
   {
     $product = Product::find($id);
     return view('admin.pages.product.edit')->with('product', $product);
   }
 
-  public function product_delete($id)
+  public function delete($id)
   {
     $product = Product::find($id);
+    if (!is_null($product)){
+        $product->delete();
+    }
     return redirect()->route('admin.products');
   }
 
-  public function product_update(Request $request, $id)
+  public function update(Request $request, $id)
   {
     // Validation
     $request->validate([
@@ -91,7 +91,7 @@ class AdminPagesController extends Controller
     return redirect()->route('admin.products');
   }
 
-  public function product_store(Request $request)
+  public function store(Request $request)
   {
     // Validation
     $request->validate([

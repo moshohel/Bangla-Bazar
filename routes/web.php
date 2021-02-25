@@ -27,9 +27,15 @@ Route::get('/products', 'App\Http\Controllers\PagesController@products')->name('
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\AdminPagesController@index')->name('admin.index');
-    Route::get('/products', 'App\Http\Controllers\AdminPagesController@manage_products')->name('admin.products');
-    Route::get('/product/create', 'App\Http\Controllers\AdminPagesController@product_create')->name('admin.product.create');
-    Route::get('/product/edit/{id}', 'App\Http\Controllers\AdminPagesController@product_edit')->name('admin.product.edit');
-    Route::post('/product/create', 'App\Http\Controllers\AdminPagesController@product_store')->name('admin.product.store');
-    Route::post('/product/edit/{id}', 'App\Http\Controllers\AdminPagesController@product_update')->name('admin.product.update');
+
+    // Product Routes
+    Route::prefix('/products')->group(function () {
+        Route::get('/', 'App\Http\Controllers\AdminProductController@index')->name('admin.products');
+        Route::get('/create', 'App\Http\Controllers\AdminProductController@create')->name('admin.product.create');
+        Route::get('/edit/{id}', 'App\Http\Controllers\AdminProductController@edit')->name('admin.product.edit');
+        Route::post('/create', 'App\Http\Controllers\AdminProductController@store')->name('admin.product.store');
+        Route::post('/edit/{id}', 'App\Http\Controllers\AdminProductController@update')->name('admin.product.update');
+        Route::post('/delete/{id}', 'App\Http\Controllers\AdminProductController@delete')->name('admin.product.delete');
+    });
+
 });
