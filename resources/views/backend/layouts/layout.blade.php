@@ -92,7 +92,7 @@
 
 
                   <li>
-                    <a class="active" href="{{ url('/admin/products') }}">
+                    <a class="active" href="{{ route('admin.products') }}">
                       <span class="nav-text">Manage Products</span>
 
                     </a>
@@ -157,6 +157,85 @@
             </li>
 
 
+
+
+
+
+            <li class="has-sub">
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#categories"
+                aria-expanded="false" aria-controls="categories">
+                <i class="mdi mdi-animation"></i>
+                <span class="nav-text">Categories</span> <b class="caret"></b>
+              </a>
+              <ul class="collapse" id="categories" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.categories') }}">
+                      <span class="nav-text">Manage Categories</span>
+
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.category.create') }}">
+                      <span class="nav-text">Create Categories</span>
+
+                    </a>
+                  </li>
+
+
+                  <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                      data-target="#authentication" aria-expanded="false" aria-controls="authentication">
+                      <span class="nav-text">Authentication</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="authentication">
+                      <div class="sub-menu">
+
+                        <li>
+                          <a href="sign-in.html">Sign In</a>
+                        </li>
+
+                        <li>
+                          <a href="sign-up.html">Sign Up</a>
+                        </li>
+
+                      </div>
+                    </ul>
+                  </li>
+
+
+
+
+                  <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#others"
+                      aria-expanded="false" aria-controls="others">
+                      <span class="nav-text">Others</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="others">
+                      <div class="sub-menu">
+
+                        <li>
+                          <a href="invoice.html">invoice</a>
+                        </li>
+
+                        <li>
+                          <a href="error.html">Error</a>
+                        </li>
+
+                      </div>
+                    </ul>
+                  </li>
+
+
+
+                </div>
+              </ul>
+            </li>
 
 
 

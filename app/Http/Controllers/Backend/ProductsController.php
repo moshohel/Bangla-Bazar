@@ -20,19 +20,19 @@ class ProductsController extends Controller
     public function index()
     {
         $products = Product::orderBy('id', 'desc')->get();
-        return view('admin.pages.product.index')->with('products', $products);
+        return view('backend.pages.product.index')->with('products', $products);
     }
 
   public function create()
   {
-    return view('admin.pages.product.create');
+    return view('backend.pages.product.create');
   }
 
 
   public function edit($id)
   {
     $product = Product::find($id);
-    return view('admin.pages.product.edit')->with('product', $product);
+    return view('backend.pages.product.edit')->with('product', $product);
   }
 
   public function delete($id)
@@ -142,7 +142,8 @@ class ProductsController extends Controller
       }
     }
 
-    return redirect()->route('admin.product.create');
+    // return redirect()->route('admin.products');
+    return redirect()->route('admin.products');
   }
 
 }

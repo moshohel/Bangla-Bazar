@@ -7,7 +7,7 @@
     </div>
     <div class="card-body">
         <form action="{{ route("admin.product.store") }}" method="post" enctype="multipart/form-data">
-            {{ csrf_field() }}
+            @csrf
             {{-- INCULDE Messages Partial --}}
             @include('backend.partials.messages')
             <div class="form-group">
@@ -45,7 +45,7 @@
                 <label for="exampleFormControlFile1">Product Image</label>
                 <div class="row">
                     <div class="col-md-4 mb-2">
-                        <input type="file" class="form-control-file" name="product_image[]" id="product_image">
+                        <input type="file" class="form-control-file" name="product_image[]"  id="product_image">
                     </div>
                     <div class="col-md-4 mb-2">
                         <input type="file" class="form-control-file" name="product_image[]" id="product_image">
