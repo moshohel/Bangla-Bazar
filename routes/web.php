@@ -37,9 +37,15 @@ Route::get('/contact', 'App\Http\Controllers\Frontend\PagesController@contact')-
 */
 Route::get('/products', 'App\Http\Controllers\Frontend\ProductsController@index')->name('products');
 Route::get('/products/{slug}', 'App\Http\Controllers\Frontend\ProductsController@show')->name('products.show');
+Route::get('/search', 'App\Http\Controllers\Frontend\PagesController@search')->name('search');
 
-
-
+/*
+|--------------------------------------------------------------------------
+| Backend Routes
+|--------------------------------------------------------------------------
+  All Products routes for Backend
+|
+*/
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\Backend\PagesController@index')->name('admin.index');

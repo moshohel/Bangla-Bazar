@@ -10,7 +10,9 @@
 <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
 <!-- SITE TITLE -->
-<title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
+<title>
+    @yield('title', 'Bangla Bazar Ecommerce')
+</title>
 <!-- CSS -->
 @include('frontend.partials.styles')
 

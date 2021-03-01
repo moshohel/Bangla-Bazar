@@ -35,10 +35,6 @@
 
   @include('frontend.pages.product.partials.all_products')
 
-  <script>
-    console.log(<?= json_encode($data); ?>);
-</script>
-
 
 </div>
   <!-- End Sidebar + Content -->

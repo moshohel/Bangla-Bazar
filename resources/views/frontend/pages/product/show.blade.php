@@ -1,4 +1,9 @@
 @extends('frontend.layouts.layout')
+
+@section('title')
+  {{ $product->title }} | Bangla Bazar Ecommerce
+@endsection
+
 @section('content')
 
 <div class="main_content">

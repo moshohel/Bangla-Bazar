@@ -44,7 +44,7 @@
     <!-- END SECTION BANNER -->
 
     <!-- START SECTION SHOP -->
-    @include('frontend.pages.product.partials.all_products')
+    @include('frontend.pages.product.partials.exclusive_products')
     <!-- END SECTION SHOP -->
 
     <!-- START SECTION SINGLE BANNER -->
