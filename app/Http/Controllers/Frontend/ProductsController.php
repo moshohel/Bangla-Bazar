@@ -12,8 +12,11 @@ class ProductsController extends Controller
 {
   public function index()
   {
-      $products = Product::orderBy('id', 'desc')->paginate(9);
-      return view('frontend.pages.product.index')->with('products', $products);
+
+      $data['newProducts']=Product::orderBy('id', 'desc')->take(8)->get();
+      $data['bestSellProducts']=Product::where('quantity', '<', 100)->take(4)->get();
+
+      return view('frontend.pages.product.index', ['data'=>$data]);
   }
   public function show($slug)
   {

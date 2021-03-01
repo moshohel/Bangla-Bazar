@@ -260,17 +260,12 @@
           <button id="sidebar-toggler" class="sidebar-toggle">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <!-- search form -->
 
-          <div class="search-form d-none d-lg-inline-block">
-            <div class="input-group">
+          <div class="d-none d-lg-inline-block" style="display: block; margin: 0 13%;">
 
-              <div class="form-control"></div>
+              <h3>Welcome to your Admin Panel <span><a href="{!! route('index') !!}" class="mb-1 btn btn-primary" target="_blank">Visit Site</a></span></h3>
             </div>
-            <div id="search-results-container">
-              <ul id="search-results"></ul>
-            </div>
-          </div>
+
 
           <div class="navbar-right ">
             <ul class="nav navbar-nav">

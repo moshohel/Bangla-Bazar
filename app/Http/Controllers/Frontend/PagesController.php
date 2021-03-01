@@ -11,7 +11,13 @@ class PagesController extends Controller
 {
   public function index()
   {
-    return view('frontend.pages.home_content');
+    // $products = Product::orderBy('id', 'desc')->paginate(3);
+    // $products = Product::orderBy('id', 'desc')->get();
+
+    $data['newProducts']=Product::orderBy('id', 'desc')->take(8)->get();
+    $data['bestSellProducts']=Product::where('quantity', '<', 100)->take(4)->get();
+
+    return view('frontend.pages.home_content', ['data'=>$data]);
   }
   public function contact()
   {

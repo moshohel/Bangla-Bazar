@@ -1,6 +1,7 @@
 @extends('backend.layouts.layout')
 
 @section('content')
+
 <div class="row">
   <div class="col-xl-3 col-sm-6">
     <div class="card card-mini mb-4">

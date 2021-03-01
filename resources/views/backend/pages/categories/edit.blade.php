@@ -26,7 +26,7 @@
             <div class="form-group">
               <label for="exampleInputPassword1">Parent Category (optional)</label>
               <select class="form-control" name="parent_id">
-                <option value="">Please select a Primary category</option>
+                <option value="">Make It Primary category</option>
                 @foreach ($main_categories as $cat)
                   <option value="{{ $cat->id }}" {{ $cat->id == $category->parent_id ? 'selected' : '' }}>{{ $cat->name }}</option>
                 @endforeach
