@@ -39,8 +39,8 @@
                                         @foreach ($product->images as $image)
                                             @if ($i > 0)
                                                 <div class="product_img">
-                                                    <a href="shop-product-detail.html">
-                                                        <img src="{{  '/images/'. $image->image  }}" alt="product_img1">
+                                                    <a href="{{ route('products.show', $product->slug) }}">
+                                                        <img src="{{  '/images/'. $image->image  }}" alt="{{ $product->title }}">
                                                     </a>
                                                     <div class="product_action_box">
                                                         <ul class="list_none pr_action_btn">
@@ -57,7 +57,9 @@
 
 
                                         <div class="product_info">
-                                            <h6 class="product_title"><a href="shop-product-detail.html">{{ $product->title }}</a></h6>
+                                            <h6 class="product_title">
+                                                <a href="{{ route('products.show', $product->slug) }}">{{ $product->title }}</a>
+                                            </h6>
                                             <div class="product_price">
                                                 <span class="price">${{ $product->price }}</span>
                                                 <del>$55.25</del>

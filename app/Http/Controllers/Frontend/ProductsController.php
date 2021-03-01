@@ -20,7 +20,7 @@ class ProductsController extends Controller
   }
   public function show($slug)
   {
-      $product = Product::where('slug', $slug)->first();
+    $product = Product::where('slug', $slug)->first();
       if (!is_null($product)) {
         return view('frontend.pages.product.show', compact('product'));
       }else {
