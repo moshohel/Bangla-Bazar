@@ -3,16 +3,14 @@
 <!-- CSS -->
 {{-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css"/> --}}
 
-<!-- Bootstrap theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"/>
+
 
 
 <!-- Favicon Icon -->
 <link rel="shortcut icon" type="image/x-icon" href={{URL::to("/images/favicon.png")}}>
 <!-- Animation CSS -->
 <link rel="stylesheet" href={{asset("assets/css/animate.css")}}>
-<!-- Latest Bootstrap min CSS -->
-<link rel="stylesheet" href={{asset("assets/bootstrap/css/bootstrap.min.css")}}>
+
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -32,6 +30,10 @@
 <!-- Slick CSS -->
 <link rel="stylesheet" href={{asset("assets/css/slick.css")}}>
 <link rel="stylesheet" href={{asset("assets/css/slick-theme.css")}}>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"/>
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href={{asset("assets/bootstrap/css/bootstrap.min.css")}}>
 <!-- Style CSS -->
 <link rel="stylesheet" href={{asset("assets/css/style.css")}}>
 <link rel="stylesheet" href={{asset("assets/css/responsive.css")}}>

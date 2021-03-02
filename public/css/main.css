@@ -168,3 +168,12 @@ a.back {
     color: #777;
     text-decoration: none !important;
 }
+
+.page-item.active .page-link {
+    background-color: #ff324d !important;
+    border-color: #ffd6db !important;
+}
+
+.pagination .page-item a {
+    color: black !important;
+}

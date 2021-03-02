@@ -18,7 +18,7 @@
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product">
 
-                                        {{-- showing one image from productImage table --}}
+                                        {{-- show product image --}}
                                         @php $i = 1; @endphp
                                         @foreach ($product->images as $image)
                                             @if ($i > 0)
@@ -64,13 +64,22 @@
                                     </div>
                                 </div>
                             @endforeach
-
                       </div>
-
-
-
               </div>
           </div>
       </div>
   </div>
 </div>
+
+  {{-- <div class="p-4 pagination pagination-lg justify-content-center">
+    {{ $products->links() }}
+  </div> --}}
+  <div class="mt-4 mb-4">
+    <nav aria-label="...">
+        <ul class="m-6 pagination justify-content-center">
+            {{ $products->links() }}
+        </ul>
+        </nav>
+  </div>
+
+
