@@ -61,11 +61,15 @@
                                     </div>
                                     <span class="rating_num">(21)</span>
                                 </div>
-                            <div class="pr_desc">
-                                <p>{!! $product->description !!}</p>
+                            <div class="pr_desc ml-4">
+                                <span class="badge badge-primary">
+                                    {{ $product->quantity < 1 ? "No Item is Available" : $product->quantity." Item in stock." }}
+                                </span>
                             </div>
-                            <div class="product_sort_info">
+                            <div class="product_sort_info mt-4">
+
                                 <ul>
+                                    <li><i class="linearicons-shield-check"></i>{!! $product->description !!}</li>
                                     <li><i class="linearicons-shield-check"></i> 1 Year AL Jazeera Brand Warranty</li>
                                     <li><i class="linearicons-sync"></i> 30 Day Return Policy</li>
                                     <li><i class="linearicons-bag-dollar"></i> Cash on Delivery available</li>
