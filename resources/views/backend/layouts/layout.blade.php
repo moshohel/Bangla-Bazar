@@ -188,6 +188,51 @@
                   </li>
 
 
+
+
+                </div>
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <li class="has-sub">
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#brands"
+                aria-expanded="false" aria-controls="brands">
+                <i class="mdi mdi-animation"></i>
+                <span class="nav-text">Brands</span> <b class="caret"></b>
+              </a>
+              <ul class="collapse" id="brands" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.brands') }}">
+                      <span class="nav-text">Manage brands</span>
+
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.brand.create') }}">
+                      <span class="nav-text">Create brands</span>
+
+                    </a>
+                  </li>
+
+
                   <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
                       data-target="#authentication" aria-expanded="false" aria-controls="authentication">
@@ -236,13 +281,6 @@
                 </div>
               </ul>
             </li>
-
-
-
-
-
-
-
           </ul>
 
         </div>

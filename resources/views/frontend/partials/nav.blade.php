@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="{{ route('index') }}">
-      <img class="logo_light" src="/images/logo_light.png" alt="logo" />
-      <img class="logo_dark" src="/images/logo_dark.png" alt="logo" />
+      {{-- <img class="logo_light" src="/images/logo_light.png" alt="logo" />
+      <img class="logo_dark" src="/images/logo_dark.png" alt="logo" /> --}}
+      <h2><p>bangla Bazaar</p></h2>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
       <span class="ion-android-menu"></span>
