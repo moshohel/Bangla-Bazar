@@ -8,167 +8,26 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #ffffff !important;
-    /* color: #292b2c; */
-    font-family: "Roboto";
+#slider-1st-header-1,
+#slider-1st-header-2,
+#slider-2nd-header-1,
+#slider-2nd-header-2,
+#slider-3rd-header-1,
+#slider-3rd-header-2 {
+    color: #ffffff;
 }
 
-.full-height {
-    height: 100vh;
+h5.single_bn_title1,
+h4.single_bn_title1,
+h3.single_bn_title {
+    color: #ffffff;
 }
 
-.flex-center {
-    -webkit-box-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
+a.single_bn_link {
+    color: #ff324d;
 }
 
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
-.content {
-    text-align: center;
-}
-
-.links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.m-b-md {
-    margin-bottom: 30px;
-}
-
-footer {
-    background: #eee;
-    padding: 20px;
-    text-align: center;
-}
-
-.title {
-    font-size: 50px;
-    text-transform: uppercase;
-    border-bottom: 2px solid;
-    padding: 12px 0;
-    color: #5e2195;
-}
-
-.wrapper {
-    max-width: 1140px;
-    padding: 10px;
-    margin: 20px auto;
-}
-
-/* create pizza form */
-
-.create-pizza {
-    background: #f7f7f7;
-    padding: 20px;
-}
-
-.create-pizza label,
-.create-pizza select {
-    display: block;
-}
-
-.create-pizza label {
-    margin-top: 30px;
-}
-
-.create-pizza select {
-    padding: 8px;
-    width: 200px;
-}
-
-.create-pizza input[type="checkbox"] {
-    margin: 10px;
-}
-
-.create-pizza input[type="submit"] {
-    background: #5e2195;
-    padding: 8px 20px;
-    color: #fff;
-    border: 0;
-    margin-top: 20px;
-}
-
-/* pizza details page */
-
-.pizza-details {
-    background: #f7f7f7;
-    padding: 20px;
-}
-
-.pizza-details p {
-    margin: 20px 0;
-    font-weight: bold;
-}
-
-.pizza-details button {
-    background: #5e2195;
-    padding: 8px 20px;
-    color: #fff;
-    border: 0;
-    margin-top: 20px;
-}
-
-a.back {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    color: #5e2195;
-    margin-bottom: 20px;
-}
-
-/* pizza index page */
-
-.pizza-index h1 {
-    margin-bottom: 40px;
-}
-
-.pizza-index .pizza-item {
-    margin: 10px 0;
-    padding: 12px;
-    background: #f4f4f4;
-}
-
-.pizza-index .pizza-item img {
-    width: 60px;
-    display: inline-block;
-}
-
-.pizza-index .pizza-item h4 {
-    display: inline-block;
-    font-weight: normal;
-    margin-left: 20px;
-}
-
-.pizza-index .pizza-item h4 a {
-    color: #777;
-    text-decoration: none !important;
-}
-
+.page-item.active .page-link,
 .page-item.active .page-link {
     background-color: #ff324d !important;
     border-color: #ffd6db !important;
@@ -177,3 +36,28 @@ a.back {
 .pagination .page-item a {
     color: black !important;
 }
+
+.hidden {
+    display: none;
+}
+
+/** Product CSS **/
+.product-item {
+    background: #dcf4fc;
+}
+.child-rows {
+    padding-left: 20px;
+    border-left: 1px solid #dfdfdf;
+    background: #fff;
+}
+.child-rows a.list-group-item {
+    border-left: 0px !important;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #ff324d !important;
+    border-color: #ff324d !important;
+    border-radius: 0px !important;
+}
+/** End Product CSS **/

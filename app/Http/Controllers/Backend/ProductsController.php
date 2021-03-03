@@ -55,7 +55,7 @@ class ProductsController extends Controller
 
 
     // Inserting multiple Images
-    if (count($request->product_image) > 0) {
+    if ($request->product_image > 0) {
       $i = 0;
       foreach ($request->product_image as $image) {
 
@@ -92,8 +92,8 @@ class ProductsController extends Controller
       'description'   => 'required',
       'price'         => 'required|numeric',
       'quantity'      => 'required|numeric',
-      // 'category_id'   => 'required|numeric',
-      // 'brand_id'      => 'required|numeric',
+      'category_id'   => 'required|numeric',
+      'brand_id'      => 'required|numeric',
     ]);
 
     // Using Product Modle
@@ -104,8 +104,8 @@ class ProductsController extends Controller
     $product->quantity = $request->quantity;
 
     $product->slug = str::slug($request->title);
-    $product->category_id = 1;
-    $product->brand_id = 1;
+    $product->category_id = $request->category_id;
+    $product->brand_id = $request->brand_id;
     $product->admin_id = 1;
     $product->save();
 

@@ -26,6 +26,39 @@
                 <label for="exampleFormControlPassword">Quantity</label>
                 <input type="number" class="form-control"  name="quantity" value="{{ $product->quantity }}">
             </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Select Category</label>
+                <select class="form-control" name="category_id">
+                  <option value="">Please select a category for the product</option>
+                  @foreach (App\Models\Category::orderBy('name', 'asc')->where('parent_id', NULL)->get() as $parent)
+
+                  {{-- <option value="{{ $parent->id }}" {{ $parent->id == $product->category->id ? 'selected': '' }}>{{ $parent->name }}</option>
+
+                    @foreach (App\Models\Category::orderBy('name', 'asc')->where('parent_id', $parent->id)->get() as $child)
+                      <option value="{{ $child->id }}"  {{ $child->id == $product->category->id ? 'selected': '' }}> ------> {{ $child->name }}</option>
+
+                    @endforeach --}}
+                    <script>
+                        console.log(<?= json_encode($parent->id); ?>);
+                    </script>
+                  @endforeach
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Select Brand</label>
+                <select class="form-control" name="brand_id">
+                  <option value="">Please select a brand for the product</option>
+                  @foreach (App\Models\Brand::orderBy('name', 'asc')->get() as $br)
+                  <script>
+                        console.log(<?= json_encode($br->id); ?>);
+                    </script>
+                    <option value="" {{ $br->id == $product->brand->id ? 'selected' : '' }}>{{ $br->name }}</option>
+                  @endforeach
+                </select>
+              </div>
+
             <div class="form-group">
                 <label for="exampleFormControlFile1">Product Image</label>
                 <div class="row">

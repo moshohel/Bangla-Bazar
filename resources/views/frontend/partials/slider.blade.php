@@ -7,8 +7,8 @@
                         <div class="row">
                             <div class="col-lg-7 col-9">
                                 <div class="banner_content overflow-hidden">
-                                	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Get up to 50% off Today Only!</h5>
-                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Woman Fashion</h2>
+                                	<h5 class="mb-3 staggered-animation font-weight-light" id="slider-1st-header-1" data-animation="slideInLeft" data-animation-delay="0.5s">Get up to 50% off Today Only!</h5>
+                                    <h2 class="staggered-animation" id="slider-1st-header-2" data-animation="slideInLeft" data-animation-delay="1s">Woman Fashion</h2>
                                     <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>
@@ -22,8 +22,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="banner_content overflow-hidden">
-                                	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">50% off in all products</h5>
-                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Man Fashion</h2>
+                                	<h5 class="mb-3 staggered-animation font-weight-light" id="slider-2nd-header-1" data-animation="slideInLeft" data-animation-delay="0.5s">50% off in all products</h5>
+                                    <h2 class="staggered-animation" id="slider-2nd-header-2" data-animation="slideInLeft" data-animation-delay="1s">Man Fashion</h2>
                                     <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>
@@ -37,8 +37,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="banner_content overflow-hidden">
-                                	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Taking your Viewing Experience to Next Level</h5>
-                                    <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Summer Sale</h2>
+                                	<h5 class="mb-3 staggered-animation font-weight-light" id="slider-3rd-header-1" data-animation="slideInLeft" data-animation-delay="0.5s">Taking your Viewing Experience to Next Level</h5>
+                                    <h2 class="staggered-animation" id="slider-3rd-header-2" data-animation="slideInLeft" data-animation-delay="1s">Summer Sale</h2>
                                     <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>

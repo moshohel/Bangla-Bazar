@@ -2,7 +2,7 @@
   <a class="navbar-brand" href="{{ route('index') }}">
       {{-- <img class="logo_light" src="/images/logo_light.png" alt="logo" />
       <img class="logo_dark" src="/images/logo_dark.png" alt="logo" /> --}}
-      <h2><p>bangla Bazaar</p></h2>
+      <h2>Bangla Bazaar</h2>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
       <span class="ion-android-menu"></span>
@@ -21,7 +21,7 @@
                         <ul>
                             <li class="dropdown-header">{{ $parent->name }}</li>
                             @foreach (App\Models\Category::orderBy('name', 'asc')->where('parent_id', $parent->id)->get() as $child)
-                                <li><a class="dropdown-item nav-link nav_item" href="#">{{ $child->name }}</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="{{ route('categories.show', $child->id) }}">{{ $child->name }}</a></li>
                             @endforeach
 
                         </ul>

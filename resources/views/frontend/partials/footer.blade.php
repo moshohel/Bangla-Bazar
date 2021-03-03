@@ -6,7 +6,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                 	<div class="widget">
                         <div class="footer_logo">
-                            <a href="#"><img src="/images/logo_light.png" alt="logo"/></a>
+                            <a href="{{ url('/') }}"><h2 style="color: white"> Bangla Bazar </h2></a>
                         </div>
                         <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
                     </div>
@@ -62,15 +62,15 @@
                         <ul class="contact_info contact_info_light">
                             <li>
                                 <i class="ti-location-pin"></i>
-                                <p>123 Street, Old Trafford, New South London , UK</p>
+                                <p>no Street, no city , not country</p>
                             </li>
                             <li>
                                 <i class="ti-email"></i>
-                                <a href="mailto:info@sitename.com">info@sitename.com</a>
+                                <a href="mailto:info@banglabazar.com">@.com</a>
                             </li>
                             <li>
                                 <i class="ti-mobile"></i>
-                                <p>+ 457 789 789 65</p>
+                                <p>+ 111 222 333 444</p>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="mb-md-0 text-center text-md-left">© 2020 All Rights Reserved by Bestwebcreator</p>
+
                 </div>
                 <div class="col-md-6">
                     <ul class="footer_payment text-center text-lg-right">

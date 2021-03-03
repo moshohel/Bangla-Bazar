@@ -28,6 +28,7 @@ use App\Http\Controllers\Frontend\PagesController;
 // Frontend Routes
 Route::get('/', 'App\Http\Controllers\Frontend\PagesController@index')->name('index');
 Route::get('/contact', 'App\Http\Controllers\Frontend\PagesController@contact')->name('contact');
+
 /*
 |--------------------------------------------------------------------------
 | Frontend Routes
@@ -35,9 +36,16 @@ Route::get('/contact', 'App\Http\Controllers\Frontend\PagesController@contact')-
   All Products routes for frontend
 |
 */
-Route::get('/products', 'App\Http\Controllers\Frontend\ProductsController@index')->name('products');
-Route::get('/products/{slug}', 'App\Http\Controllers\Frontend\ProductsController@show')->name('products.show');
-Route::get('/search', 'App\Http\Controllers\Frontend\PagesController@search')->name('search');
+Route::prefix('products')->group(function () {
+  Route::get('/', 'App\Http\Controllers\Frontend\ProductsController@index')->name('products');
+  Route::get('/{slug}', 'App\Http\Controllers\Frontend\ProductsController@show')->name('products.show');
+  Route::get('/search', 'App\Http\Controllers\Frontend\PagesController@search')->name('search');
+
+  //Category Routes
+  Route::get('/categories', 'App\Http\Controllers\Frontend\CategoriesController@index')->name('categories.index');
+  Route::get('/category/{id}', 'App\Http\Controllers\Frontend\CategoriesController@show')->name('categories.show');
+});
+
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +54,7 @@ Route::get('/search', 'App\Http\Controllers\Frontend\PagesController@search')->n
   All Products routes for Backend
 |
 */
+
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\Backend\PagesController@index')->name('admin.index');
