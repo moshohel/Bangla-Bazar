@@ -14,6 +14,11 @@ class PagesController extends Controller
     // $products = Product::orderBy('id', 'desc')->paginate(3);
     // $products = Product::orderBy('id', 'desc')->get();
 
+    print_r(php_ini_loaded_file());
+    print_r(php_ini_loaded_file());
+    print_r(php_ini_loaded_file());
+    print_r(php_ini_loaded_file());
+
     $data['newProducts']=Product::orderBy('id', 'desc')->take(8)->get();
     $data['bestSellProducts']=Product::where('quantity', '<', 100)->take(4)->get();
 

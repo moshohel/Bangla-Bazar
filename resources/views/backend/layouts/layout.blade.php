@@ -233,47 +233,37 @@
                   </li>
 
 
-                  <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
-                      data-target="#authentication" aria-expanded="false" aria-controls="authentication">
-                      <span class="nav-text">Authentication</span> <b class="caret"></b>
+
+                </div>
+              </ul>
+            </li>
+
+
+
+            <li class="has-sub">
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#divisions"
+                aria-expanded="false" aria-controls="divisions">
+                <i class="mdi mdi-animation"></i>
+                <span class="nav-text">Divisions</span> <b class="caret"></b>
+              </a>
+              <ul class="collapse" id="divisions" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.divisions') }}">
+                      <span class="nav-text">Manage divisions</span>
+
                     </a>
-                    <ul class="collapse" id="authentication">
-                      <div class="sub-menu">
-
-                        <li>
-                          <a href="sign-in.html">Sign In</a>
-                        </li>
-
-                        <li>
-                          <a href="sign-up.html">Sign Up</a>
-                        </li>
-
-                      </div>
-                    </ul>
                   </li>
 
 
+                  <li>
+                    <a class="active" href="{{ route('admin.division.create') }}">
+                      <span class="nav-text">Create divisions</span>
 
-
-                  <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#others"
-                      aria-expanded="false" aria-controls="others">
-                      <span class="nav-text">Others</span> <b class="caret"></b>
                     </a>
-                    <ul class="collapse" id="others">
-                      <div class="sub-menu">
-
-                        <li>
-                          <a href="invoice.html">invoice</a>
-                        </li>
-
-                        <li>
-                          <a href="error.html">Error</a>
-                        </li>
-
-                      </div>
-                    </ul>
                   </li>
 
 
@@ -281,6 +271,44 @@
                 </div>
               </ul>
             </li>
+
+
+
+
+            <li class="has-sub">
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#districts"
+                aria-expanded="false" aria-controls="districts">
+                <i class="mdi mdi-animation"></i>
+                <span class="nav-text">Districts</span> <b class="caret"></b>
+              </a>
+              <ul class="collapse" id="districts" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.districts') }}">
+                      <span class="nav-text">Manage districts</span>
+
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a class="active" href="{{ route('admin.district.create') }}">
+                      <span class="nav-text">Create districts</span>
+
+                    </a>
+                  </li>
+
+
+
+                </div>
+              </ul>
+            </li>
+
+
+
           </ul>
 
         </div>

@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        print_r(php_ini_loaded_file());
         return view('home');
     }
 }

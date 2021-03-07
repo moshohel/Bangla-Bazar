@@ -93,6 +93,30 @@ Route::group(['prefix' => 'admin'], function(){
       Route::post('/brand/delete/{id}', 'App\Http\Controllers\Backend\BrandsController@delete')->name('admin.brand.delete');
     });
 
+    // Division Routes
+    Route::group(['prefix' => '/divisions'], function(){
+      Route::get('/', 'App\Http\Controllers\Backend\DivisionsController@index')->name('admin.divisions');
+      Route::get('/create', 'App\Http\Controllers\Backend\DivisionsController@create')->name('admin.division.create');
+      Route::get('/edit/{id}', 'App\Http\Controllers\Backend\DivisionsController@edit')->name('admin.division.edit');
+
+      Route::post('/store', 'App\Http\Controllers\Backend\DivisionsController@store')->name('admin.division.store');
+
+      Route::post('/division/edit/{id}', 'App\Http\Controllers\Backend\DivisionsController@update')->name('admin.division.update');
+      Route::post('/division/delete/{id}', 'App\Http\Controllers\Backend\DivisionsController@delete')->name('admin.division.delete');
+    });
+
+    // District Routes
+    Route::group(['prefix' => '/districts'], function(){
+      Route::get('/', 'App\Http\Controllers\Backend\DistrictsController@index')->name('admin.districts');
+      Route::get('/create', 'App\Http\Controllers\Backend\DistrictsController@create')->name('admin.district.create');
+      Route::get('/edit/{id}', 'App\Http\Controllers\Backend\DistrictsController@edit')->name('admin.district.edit');
+
+      Route::post('/store', 'App\Http\Controllers\Backend\DistrictsController@store')->name('admin.district.store');
+
+      Route::post('/district/edit/{id}', 'App\Http\Controllers\Backend\DistrictsController@update')->name('admin.district.update');
+      Route::post('/district/delete/{id}', 'App\Http\Controllers\Backend\DistrictsController@delete')->name('admin.district.delete');
+    });
+
 });
 
 
