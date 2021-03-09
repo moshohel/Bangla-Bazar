@@ -84,10 +84,10 @@ class DivisionsController extends Controller
       $division = Division::find($id);
       if (!is_null($division)) {
         //Delete all the districts for this division
-        // $districts = District::where('division_id', $division->id)->get();
-        // foreach ($districts as $district) {
-        //   $district->delete();
-        // }
+        $districts = District::where('division_id', $division->id)->get();
+        foreach ($districts as $district) {
+          $district->delete();
+        }
         $division->delete();
       }
       session()->flash('success', 'Division has deleted successfully !!');

@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
 
             $table->string('street_address');
             $table->unsignedInteger('division_id')->comment('Division Table ID');
+            $table->unsignedInteger('district_id')->comment('District Table ID');
 
 
             $table->unsignedTinyInteger('status')->default(0)->comment('0=Inactive|1=Active|2=Ban');

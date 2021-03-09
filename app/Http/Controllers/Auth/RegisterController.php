@@ -5,9 +5,13 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\Division;
+use App\Models\District;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+$slug = Str::slug('Laravel 5 Framework', '-');
 
 class RegisterController extends Controller
 {
@@ -29,7 +33,9 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = '/';
+    protected $redirectTo = '/';
+    // protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -42,6 +48,22 @@ class RegisterController extends Controller
     }
 
     /**
+     * @override
+     * showRegistrationForm
+     *
+     * Display the registration form
+     *
+     * @return void view
+     */
+    public function showRegistrationForm()
+    {
+        $divisions = Division::orderBy('priority', 'asc')->get();
+        $districts = District::orderBy('name', 'asc')->get();
+
+        return view('auth.register', compact('districts', 'divisions'));
+    }
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -50,9 +72,14 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'first_name' => 'required|string|max:30',
+            'last_name' => 'nullable|string|max:15',
+            'email' => 'required|string|email|max:100|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+            'division_id' => 'required|numeric',
+            'district_id' => 'required|numeric',
+            'phone_no' => 'required|max:15',
+            'street_address' => 'required|max:100',
         ]);
     }
 
@@ -65,7 +92,14 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'username' => str::slug($data['first_name'].$data['last_name']),
+            'division_id' => $data['division_id'],
+            'district_id' => $data['district_id'],
+            'phone_no' => $data['phone_no'],
+            'street_address' => $data['street_address'],
+            'ip_address' => request()->ip(),
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
