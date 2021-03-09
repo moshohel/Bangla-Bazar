@@ -32,6 +32,8 @@
 @include('frontend.partials.header')
 <!-- END HEADER -->
 
+@include('frontend.partials.messages')
+
 {{-- <!-- START Slider -->
 @include('frontend.partials.slider')
 <!-- END Slider --> --}}

@@ -7,9 +7,12 @@ use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use App\Models\Division;
 use App\Models\District;
+use App\Notifications\VerifyRegistration;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 $slug = Str::slug('Laravel 5 Framework', '-');
 
@@ -89,19 +92,26 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
-    {
-        return User::create([
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
-            'username' => str::slug($data['first_name'].$data['last_name']),
-            'division_id' => $data['division_id'],
-            'district_id' => $data['district_id'],
-            'phone_no' => $data['phone_no'],
-            'street_address' => $data['street_address'],
+    protected function register(Request $request)
+        {
+            $user = User::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'username' => str::slug($request->first_name.$request->last_name),
+            'division_id' => $request->division_id,
+            'district_id' => $request->district_id,
+            'phone_no' => $request->phone_no,
+            'street_address' => $request->street_address,
             'ip_address' => request()->ip(),
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'remember_token'  =>str::random(50),
+            'status'  => 0,
         ]);
+
+    $user->notify(new VerifyRegistration($user, $user->remember_token));
+
+    session()->flash('success', 'A confirmation email has sent to you.. Please check and confirm your email');
+    return redirect('/');;
     }
 }
