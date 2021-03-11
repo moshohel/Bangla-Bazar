@@ -28,7 +28,8 @@
                             @else
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
+                                        <img src="{{ App\Helpers\ImageHelper::getUserImage(Auth::user()->id) }}" class="img rounded-circle" style="width:40px">
+                                        {{ Auth::user()->first_name }} {{ Auth::user()->last_name }} <span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown dropdown-menu dropdown-menu-right"  aria-labelledby="navbarDropdown" >
