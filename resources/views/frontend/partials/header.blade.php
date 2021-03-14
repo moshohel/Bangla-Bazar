@@ -33,6 +33,16 @@
                                     </a>
 
                                     <div class="dropdown dropdown-menu dropdown-menu-right"  aria-labelledby="navbarDropdown" >
+                                        <a class="dropdown dropdown-item" data-target="dropdown" href="{{ route('user.dashboard') }}"
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('dashboard-form').submit();">
+                                            {{ __('Dashboard') }}
+                                        </a>
+
+                                        <form id="dashboard-form" action="{{ route('user.dashboard') }}" method="GET" style="display: none;">
+                                            @csrf
+                                        </form>
+
                                         <a class="dropdown dropdown-item" data-target="dropdown" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
@@ -42,7 +52,11 @@
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
+
+
                                     </div>
+
+
                                 </li>
                             @endguest
 						</ul>

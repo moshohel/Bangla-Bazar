@@ -1,4 +1,15 @@
-html,
+html {
+    height: 100%;
+}
+
+/* body {
+    position: relative;
+    min-height: 100%;
+    color: #000;
+    font-family: tahoma;
+} */
+
+/* html,
 body {
     background-color: #fff;
     color: #636b6f;
@@ -6,7 +17,7 @@ body {
     font-weight: 200;
     height: 100vh;
     margin: 0;
-}
+} */
 
 #slider-1st-header-1,
 #slider-1st-header-2,
@@ -60,4 +71,11 @@ a.single_bn_link {
     border-color: #ff324d !important;
     border-radius: 0px !important;
 }
+
+/* User CSS */
+
+.pointer {
+    cursor: pointer;
+}
+
 /** End Product CSS **/

@@ -15,14 +15,11 @@ class GravatarHelper
   * @return boolean true, if there is an image. false otherwise
   */
   public static function validate_gravatar($email) {
-    $hash = md5( strtolower( trim( $email ) ) );
-    // $hash = md5($email);
-    // dd($hash);
+
+    $hash = md5($email);
     $uri = 'http://www.gravatar.com/avatar/' . $hash . '?d=404';
     $headers = @get_headers($uri);
-    // dd($headers);
     if (!preg_match("|200|", $headers[0])) {
-      // dd($email);
       $has_valid_avatar = FALSE;
     } else {
       $has_valid_avatar = TRUE;
