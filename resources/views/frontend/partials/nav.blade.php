@@ -73,6 +73,18 @@
           <li>
               <a class="nav-link nav_item" href="{{ route('contact') }}">Contact Us</a>
           </li>
+          <li>
+            <a class="nav-link btn-cart-nav" href="{{ route('carts') }}">
+
+              <button class="btn btn-danger">
+                <span>Cart</span>
+                <span class="badge badge-warning" id="totalItems">
+                  {{ App\Models\Cart::totalItems() }}
+                </span>
+              </button>
+
+            </a>
+          </li>
       </ul>
   </div>
 
@@ -86,7 +98,7 @@
               </form>
           </div><div class="search_overlay"></div>
       </li>
-      <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+      <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">{{ App\Models\Cart::totalItems() }}</span></a>
           <div class="cart_box dropdown-menu dropdown-menu-right">
               <ul class="cart_list">
                   <li>

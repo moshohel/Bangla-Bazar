@@ -60,6 +60,7 @@
                                             <div class="pr_desc">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
                                             </div>
+                                            @include('frontend.pages.product.partials.cart-button')
                                         </div>
                                     </div>
                                 </div>

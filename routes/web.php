@@ -63,6 +63,14 @@ Route::group(['prefix' => 'user'], function(){
   Route::post('/profile/update', 'App\Http\Controllers\Frontend\UsersController@profileUpdate')->name('user.profile.update');
   });
 
+// Cart Routes
+Route::group(['prefix' => 'carts'], function(){
+  Route::get('/', 'App\Http\Controllers\Frontend\CartsController@index')->name('carts');
+  Route::post('/store', 'App\Http\Controllers\Frontend\CartsController@store')->name('carts.store');
+  Route::post('/update/{id}', 'App\Http\Controllers\Frontend\CartsController@update')->name('carts.update');
+  Route::post('/delete/{id}', 'App\Http\Controllers\Frontend\CartsController@destroy')->name('carts.delete');
+});
+
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\Backend\PagesController@index')->name('admin.index');
