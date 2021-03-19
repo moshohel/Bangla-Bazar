@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                 	<div class="d-flex align-items-center justify-content-center justify-content-md-start">
                         <ul class="contact_detail text-center text-lg-left">
-                            <li><i class="ti-mobile"></i><span>123-456-7890</span></li>
+                            <li><i class="ti-mobile"></i><span>444-555-666</span></li>
                         </ul>
                     </div>
                 </div>

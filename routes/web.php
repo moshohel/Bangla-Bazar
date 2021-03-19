@@ -71,6 +71,13 @@ Route::group(['prefix' => 'carts'], function(){
   Route::post('/delete/{id}', 'App\Http\Controllers\Frontend\CartsController@destroy')->name('carts.delete');
 });
 
+// Checkout Routes
+Route::group(['prefix' => 'checkout'], function(){
+  Route::get('/', 'App\Http\Controllers\Frontend\CheckoutsController@index')->name('checkouts');
+  Route::post('/store', 'App\Http\Controllers\Frontend\CheckoutsController@store')->name('checkouts.store');
+  });
+
+
 // Admin Routes
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/', 'App\Http\Controllers\Backend\PagesController@index')->name('admin.index');

@@ -47,6 +47,7 @@ class Cart extends Model
         }else {
           $carts = Cart::where('ip_address', request()->ip())->where('order_id', NULL)->get();
         }
+        dd($carts);
         return $carts;
       }
 

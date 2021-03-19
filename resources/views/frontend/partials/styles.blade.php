@@ -7,7 +7,8 @@
 
 
 <!-- Favicon Icon -->
-<link rel="shortcut icon" type="image/x-icon" href={{URL::to("/images/favicon.png")}}>
+<link rel="shortcut icon" type="image/x-icon" href={{URL::to("/images/favicon2.png")}}>
+{{-- <link rel="shortcut icon" type="image/x-icon" href={{URL::to("/images/favicon.png")}}> --}}
 <!-- Animation CSS -->
 <link rel="stylesheet" href={{asset("assets/css/animate.css")}}>
 
