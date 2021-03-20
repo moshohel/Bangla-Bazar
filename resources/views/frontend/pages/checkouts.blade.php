@@ -3,7 +3,7 @@
 @section('content')
   <div class='container margin-top-20 mb-3'>
     <div class="card card-body">
-      <h4>Confirm Items</h4>
+      <h2>Confirm Items</h2>
       <hr>
       <div class="row">
         <div class="col-md-7 border-right">
@@ -33,7 +33,7 @@
       </p>
     </div>
     <div class="card card-body mt-2 mb-4">
-      <h3>Shipping Address</h3>
+      <h2>Shipping Address</h2>
 
       <form method="POST" action="{{ route('checkouts.store') }}">
         @csrf
@@ -51,6 +51,7 @@
             @endif
           </div>
         </div>
+
 
         <div class="form-group row">
           <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
@@ -134,7 +135,7 @@
                 <div id="payment_{{ $payment->short_name }}" class="alert alert-success mt-2 text-center hidden"
                   <h3>{{ $payment->name }} Payment</h3>
                   <p>
-                    <strong>{{ $payment->name }} No :  {{ $payment->no }}</strong>
+                    <strong>{{ $payment->name }} No :  {{ $payment->payment_num }}</strong>
                     <br>
                     <strong>Account Type: {{ $payment->type }}</strong>
                   </p>
@@ -150,7 +151,6 @@
 
 
         </div>
-
         <div class="form-group row mb-0">
           <div class="col-md-6 offset-md-4">
             <button type="submit" class="btn btn-primary">
@@ -159,8 +159,35 @@
           </div>
         </div>
 
-      </form>
-    </div>
+      </div>
+
+
+    </form>
+
   </div>
+
+</div>
 @endsection
 
+@section('scripts')
+  <script type="text/javascript">
+  $("#payments").change(function(){
+    $payment_method = $("#payments").val();
+    if ($payment_method == "cash_in") {
+      $("#payment_cash_in").removeClass('hidden');
+      $("#payment_bkash").addClass('hidden');
+      $("#payment_rocket").addClass('hidden');
+    }else if ($payment_method == "bkash") {
+      $("#payment_bkash").removeClass('hidden');
+      $("#payment_cash_in").addClass('hidden');
+      $("#payment_rocket").addClass('hidden');
+      $("#transaction_id").removeClass('hidden');
+    }else if ($payment_method == "rocket") {
+      $("#payment_rocket").removeClass('hidden');
+      $("#payment_bkash").addClass('hidden');
+      $("#payment_cash_in").addClass('hidden');
+      $("#transaction_id").removeClass('hidden');
+    }
+  })
+  </script>
+@endsection

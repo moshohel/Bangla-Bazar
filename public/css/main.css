@@ -19,6 +19,10 @@ body {
     margin: 0;
 } */
 
+.hidden {
+    display: none;
+}
+
 #slider-1st-header-1,
 #slider-1st-header-2,
 #slider-2nd-header-1,

@@ -6,7 +6,7 @@
 <!-- END  -->
 
 <!-- Home Popup Section -->
-@include('frontend.partials.popup')
+{{-- @include('frontend.partials.popup') --}}
 <!-- End Screen Load Popup Section -->
 
 <!-- START Slider -->

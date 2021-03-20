@@ -76,7 +76,7 @@
           <li>
             <a class="nav-link btn-cart-nav" href="{{ route('carts') }}">
 
-              <button class="btn btn-danger">
+              <button class="btn btn-danger" style='padding:0%; width: 10vh; height: 5vh;'>
                 <span>Cart</span>
                 <span class="badge badge-warning" id="totalItems">
                   {{ App\Models\Cart::totalItems() }}
