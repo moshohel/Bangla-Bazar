@@ -10,10 +10,10 @@ use App\Models\District;
 
 class DivisionsController extends Controller
 {
-  // public function __construct()
-  // {
-  //   $this->middleware('auth:admin');
-  // }
+  public function __construct()
+  {
+    $this->middleware('auth:admin');
+  }
 
   public function index()
   {

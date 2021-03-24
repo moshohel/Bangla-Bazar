@@ -2,7 +2,9 @@
   <a class="navbar-brand" href="{{ route('index') }}">
       {{-- <img class="logo_light" src="/images/logo_light.png" alt="logo" />
       <img class="logo_dark" src="/images/logo_dark.png" alt="logo" /> --}}
-      <h2>Bangla Bazaar</h2>
+      <h2 style="font-family: monospace; font-weight: lighter; font-size: 2rem">
+        Bangla Bazaar
+    </h2>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
       <span class="ion-android-menu"></span>
@@ -76,7 +78,7 @@
           <li>
             <a class="nav-link btn-cart-nav" href="{{ route('carts') }}">
 
-              <button class="btn btn-danger" style='padding:0%; width: 10vh; height: 5vh;'>
+              <button class="btn btn-danger" style='padding:0%; width: 13vh; height: 7vh;'>
                 <span>Cart</span>
                 <span class="badge badge-warning" id="totalItems">
                   {{ App\Models\Cart::totalItems() }}
