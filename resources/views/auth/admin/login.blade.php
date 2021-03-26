@@ -158,9 +158,9 @@
                               </label>
 
                             </div>
-                            <p>{{-- < class="btn btn-link" href="{{ route('admin.password.request') }}">
+                            <p><a class="btn btn-link" href="{{ route('admin.password.request') }}">
                               Forgot Your Password?
-                            </> --}}</p>
+                            </a></p>
                           </div>
                           <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign In</button>
                           {{-- <p>Don't have an account yet ?

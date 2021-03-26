@@ -87,6 +87,14 @@ Route::group(['prefix' => 'admin'], function(){
     Route::post('/login/submit', 'App\Http\Controllers\Auth\Admin\LoginController@login')->name('admin.login.submit');
     Route::get('/logout/submit', 'App\Http\Controllers\Auth\Admin\LoginController@logout')->name('admin.logout');
 
+    // Password Email Send
+    Route::get('/password/reset', 'App\Http\Controllers\Auth\Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+    Route::post('/password/resetPost', 'App\Http\Controllers\Auth\Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+
+    // Password Reset
+    Route::get('/password/reset/{token}', 'App\Http\Controllers\Auth\Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');
+    Route::post('/password/reset', 'App\Http\Controllers\Auth\Admin\ResetPasswordController@reset')->name('admin.password.reset.post');
+
     // Product Routes
     Route::prefix('/products')->group(function () {
         Route::get('/', 'App\Http\Controllers\Backend\ProductsController@index')->name('admin.products');
