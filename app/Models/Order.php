@@ -19,7 +19,7 @@ class Order extends Model
         'is_paid',
         'is_completed',
         'is_seen_by_admin',
-        // 'transaction_id'
+        'transaction_id'
       ];
 
       public function user()

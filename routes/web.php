@@ -153,6 +153,21 @@ Route::group(['prefix' => 'admin'], function(){
       Route::post('/district/delete/{id}', 'App\Http\Controllers\Backend\DistrictsController@delete')->name('admin.district.delete');
     });
 
+    // Orders Routes
+  Route::group(['prefix' => '/orders'], function(){
+    Route::get('/', 'App\Http\Controllers\Backend\OrdersController@index')->name('admin.orders');
+    Route::get('/view/{id}', 'App\Http\Controllers\Backend\OrdersController@show')->name('admin.order.show');
+    Route::post('/delete/{id}', 'App\Http\Controllers\Backend\OrdersController@delete')->name('admin.order.delete');
+
+    Route::post('/completed/{id}', 'App\Http\Controllers\Backend\OrdersController@completed')->name('admin.order.completed');
+
+    Route::post('/paid/{id}', 'App\Http\Controllers\Backend\OrdersController@paid')->name('admin.order.paid');
+    Route::post('/charge-update/{id}', 'App\Http\Controllers\Backend\OrdersController@chargeUpdate')->name('admin.order.charge');
+
+    Route::get('/invoice/{id}', 'App\Http\Controllers\Backend\OrdersController@generateInvoice')->name('admin.order.invoice');
+
+  });
+
 });
 
 

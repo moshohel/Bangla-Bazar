@@ -12,6 +12,9 @@
   <link href={{asset("assets/admin/plugins/select2/css/select2.min.css")}} rel="stylesheet" />
   <link href={{asset("assets/admin/plugins/daterangepicker/daterangepicker.css")}} rel="stylesheet" />
 
+  {{-- Add datatables --}}
+  <link href={{asset("assets/admin/css/datatables.min.css")}} rel="stylesheet" />
+
   <!-- CSS -->
   <link id="sleek-css" rel="stylesheet" href={{asset("assets/admin/css/sleek.css")}} />
 

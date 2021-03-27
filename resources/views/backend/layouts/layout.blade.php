@@ -445,5 +445,12 @@
 
 @include('backend.partials.scripts')
 
+{{-- Data Table Script --}}
+<script>
+  $(document).ready(function() {
+    $('#dataTable').DataTable();
+} );
+</script>
+
 </body>
 </html>

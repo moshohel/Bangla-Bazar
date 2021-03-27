@@ -19,3 +19,5 @@
   <script src={{asset("assets/admin/js/date-range.js")}}></script>
   <script src={{asset("assets/admin/js/map.js")}}></script>
   <script src={{asset("assets/admin/js/custom.js")}}></script>
+  {{-- Datatables --}}
+  <script src={{asset("assets/admin/js/datatables.min.js")}}></script>
