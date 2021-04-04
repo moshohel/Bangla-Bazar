@@ -36,3 +36,5 @@
 
   <!-- Custome Style CSS -->
 {{-- <link rel="stylesheet" href="css/app.css"> --}}
+<link href={{asset("css/style.css")}} rel="stylesheet" />
+

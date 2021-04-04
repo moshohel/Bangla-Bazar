@@ -70,8 +70,12 @@ class OrdersController extends Controller
     // $pdf = PDF::loadView('backend.pages.orders.invoice', compact('order'));
     $pdf = PDF::setOptions(['defaultFont' => 'dejavu serif'])->loadView('backend.pages.orders.invoice', compact('order'));
 
-    return $pdf->stream('invoice.pdf');
-    //return $pdf->download('invoice.pdf');
+    // return dd('test');
+
+    $pdf->stream('invoice.pdf');
+
+    return $pdf->download('invoice.pdf');
+
   }
 
   public function paid($id)

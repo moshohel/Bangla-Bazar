@@ -53,13 +53,13 @@ thead {
 
     <div class="invoice-header">
       <div class="float-left site-logo">
-        <img src="{{ asset('images/favicon.png') }}" alt="">
+        <img src="{{ asset('images/favicon.png') }}" alt="not found">
       </div>
       <div class="float-right site-address">
         <h4>Bangla Bazar</h4>
         <p>u-lab, Dhaka-1400</p>
         <p>Phone: <a href="">111 222 333 444</a></p>
-        <p>Email: <a href="mailto:BanglaBazar@laraecommerce.com">info@laraecommerce.com</a></p>
+        <p>Email: <a href="mailto:banglabazar@BanglaBazar.com">info@BanglaBazar.com</a></p>
       </div>
       <div class="clearfix"></div>
     </div>

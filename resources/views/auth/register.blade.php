@@ -143,32 +143,48 @@
     </div>
 </div>
 
-<script>
-  console.log(<?= json_encode($districts); ?>);
-</script>
+
 @endsection
 
 
 @section('scripts')
-<script src="{{ asset('assets/js/jquery-1.12.4.min.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/jquery-1.12.4.min.js') }}"></script> --}}
+<script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
   <script>
 
     $("#division_id").change(function(){
         var division = $("#division_id").val();
+        // alert(division);
         // Send an ajax request to server with this division
         $("#district-area").html("");
         var option = "";
-        var url = "{{ url('/') }}";
-        $.get( url+"/get-districts/"+division, function( data ) {
 
-            data = JSON.parse(data);
-            data.forEach( function(element) {
-              option += "<option value='"+ element.id +"'>"+ element.name +"</option>";
+        $.get( "http://127.0.0.1:8001/get-districts/"+division,
+              function( data ) {
+                data =  JSON.parse(data)
+                data.forEach( function(element) {
+                  console.log(element.name);
+                  option += "<option value='"+ element.id +"'>"+ element.name +"</option>";
+                });
+
+
+              $("#district-area").html(option);
+
             });
 
-          $("#district-area").html(option);
+        // $("#district-area").html("");
+        // var option = "";
+        // var url = "{{ url('/') }}";
+        // $.get( url+"/get-districts/"+division, function( data ) {
 
-        });
+        //     data = JSON.parse(data);
+        //     data.forEach( function(element) {
+        //       option += "<option value='"+ element.id +"'>"+ element.name +"</option>";
+        //     });
+
+        //   $("#district-area").html(option);
+
+        // });
     })
 
 

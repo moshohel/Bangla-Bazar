@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Bangla Bazar eCommerce Website. Bangla Bazar is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
 <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- SITE TITLE -->
 <title>

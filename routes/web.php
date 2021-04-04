@@ -170,7 +170,10 @@ Route::group(['prefix' => 'admin'], function(){
 
 });
 
-
+// API Routes
+Route::get('get-districts/{id}', function ($id) {
+    return json_encode(App\Models\District::where('division_id', $id)->get());
+});
 
 Auth::routes();
 

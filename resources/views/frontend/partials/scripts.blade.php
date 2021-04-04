@@ -35,7 +35,11 @@
 <script src={{asset("assets/js/scripts.js")}}></script>
 
 
-{{-- <script>
+<!-- Aletify JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+
+<script>
 	$.ajaxSetup({
 	  headers: {
 	    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -43,13 +47,13 @@
 	});
 
 	function addToCart(product_id){
-		var url = "{{ url('/') }}";
-		$.post( url+"/api/carts/store",
-			{
-				product_id: product_id
-			})
-		  .done(function( data ) {
-		  	data = JSON.parse(data);
+		$.post( "http://127.0.0.1:8000/api/carts/store",
+		{
+			product_id: product_id
+		})
+		.done(function( data ) {
+			// alert( "Data Loaded: " + data );
+			data = JSON.parse(data);
 		    if(data.status == 'success'){
 		    	// toast
 		    	alertify.set('notifier','position', 'top-center');
@@ -57,6 +61,10 @@
 
 		    	$("#totalItems").html(data.totalItems);
 		    }
-		  });
+			console.log(data);
+			// $("#totalItems").html(data.totalItems);
+		});
 	}
-</script> --}}
+</script>
+
+
